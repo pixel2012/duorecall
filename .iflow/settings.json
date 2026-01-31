@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "pencil": {
+      "command": "c:\\Users\\leehoo\\.vscode\\extensions\\highagency.pencildev-0.6.20\\out\\mcp-server-windows-x64.exe",
+      "args": [
+        "--ws-port",
+        "54911"
+      ],
+      "env": {},
+      "type": "stdio"
+    },
+    "chrome-devtools": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "chrome-devtools-mcp",
+        "--autoConnect"
+      ]
+    }
+  }
+}
