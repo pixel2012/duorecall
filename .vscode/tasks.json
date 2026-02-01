@@ -1,0 +1,91 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Widgetbook: 生成代码",
+      "type": "shell",
+      "command": "flutter",
+      "args": [
+        "pub",
+        "run",
+        "build_runner",
+        "build",
+        "--delete-conflicting-outputs"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Widgetbook: 启动预览",
+      "type": "shell",
+      "command": "flutter",
+      "args": [
+        "run",
+        "-t",
+        "lib/widgetbook.dart"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Widgetbook: 生成并启动",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Widgetbook: 生成代码",
+        "Widgetbook: 启动预览"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "组件预览: 启动",
+      "type": "shell",
+      "command": "flutter",
+      "args": [
+        "run",
+        "-t",
+        "lib/preview/widgets_preview.dart"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Device Preview: 启动",
+      "type": "shell",
+      "command": "flutter",
+      "args": [
+        "run",
+        "-t",
+        "lib/preview/app_preview.dart"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

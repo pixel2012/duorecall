@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "duorecall",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "duorecall (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "duorecall (release mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "组件预览 (Widgets Preview)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/preview/widgets_preview.dart"
+    },
+    {
+      "name": "Widgetbook",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/widgetbook.dart"
+    },
+    {
+      "name": "Device Preview",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/preview/app_preview.dart"
+    }
+  ]
+}

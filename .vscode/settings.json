@@ -1,0 +1,42 @@
+{
+  "dart.flutterSdkPath": null,
+  "dart.openDevTools": "flutter",
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  
+  // 保存时自动格式化
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  
+  // 保存时自动热重载（关键配置）
+  "dart.flutterHotReloadOnSave": "always",
+  
+  // 构建热重载
+  "dart.buildRunnerAdditionalArgs": [],
+  
+  // 编辑器标尺
+  "editor.rulers": [80],
+  
+  // 文件排除
+  "files.exclude": {
+    "**/build": true,
+    "**/.dart_tool": true,
+    "**/.packages": true,
+    "**/.flutter-plugins": true,
+    "**/.flutter-plugins-dependencies": true,
+    "**/.metadata": true
+  },
+  
+  // 文件监视排除
+  "files.watcherExclude": {
+    "**/build": true,
+    "**/.dart_tool": true
+  },
+  
+  // 自动保存（可选，保存延迟后自动触发）
+  // "files.autoSave": "afterDelay",
+  // "files.autoSaveDelay": 1000,
+  
+  // 启用 Widgetbook 预览任务
+  "task.allowAutomaticTasks": "on"
+}
